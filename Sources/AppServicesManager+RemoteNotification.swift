@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if os(iOS)
 extension PluggableApplicationDelegate {
 
     // This callback will be made upon calling -[UIApplication registerUserNotificationSettings:]. The settings the user has granted to the application will be passed in as the second argument.
@@ -131,3 +132,4 @@ extension PluggableApplicationDelegate {
         })
     }
 }
+#endif

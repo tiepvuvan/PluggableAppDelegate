@@ -18,6 +18,7 @@ extension PluggableApplicationDelegate: UNUserNotificationCenterDelegate {
         }
     }
 
+    #if os(iOS)
     @available(iOS 10.0, *)
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         for service in _services {
@@ -32,6 +33,7 @@ extension PluggableApplicationDelegate: UNUserNotificationCenterDelegate {
             service.userNotificationCenter?(center, openSettingsFor: notification)
         }
     }
+    #endif
 
 
 }

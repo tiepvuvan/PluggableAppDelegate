@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if os(iOS)
 extension PluggableApplicationDelegate {
 
     @available(iOS 2.0, *)
@@ -38,3 +39,4 @@ extension PluggableApplicationDelegate {
         }
     }
 }
+#endif

@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if os(iOS)
 extension PluggableApplicationDelegate {
 
     // Called when the user activates your application by selecting a shortcut on the home screen,
@@ -23,3 +24,4 @@ extension PluggableApplicationDelegate {
         })
     }
 }
+#endif
