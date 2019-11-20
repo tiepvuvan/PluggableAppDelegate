@@ -6,6 +6,7 @@
 //  Copyright © 2018 Michael Pchelnikov. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 import Intents
 
@@ -21,3 +22,4 @@ extension PluggableApplicationDelegate {
         })
     }
 }
+#endif
